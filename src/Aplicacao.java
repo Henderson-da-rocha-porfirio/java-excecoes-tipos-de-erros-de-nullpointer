@@ -4,14 +4,14 @@ public class Aplicacao {
 	public static void main(String[] args) {
 
 		ContatoPF c1 = new ContatoPF();
-		c1.setNome("JosÈ");
+		c1.setNome("Jos√©");
 		c1.setCpf("000.456.234-07");
 		
-		//c1.setEndereco(new Endereco());
+		//c1.setEndereco(new Endereco()); // Solucao 1 para resolver null pointer. // Exemplo de refer√™ncia v√°lida de inicializar o Endereco sem ser na classe Contato.
 		
-		c1.getEndereco().setRua("R. dos Limıes");
+		c1.getEndereco().setRua("R. dos Lim√µes");
 		c1.getEndereco().setNumero("100");
-		c1.getEndereco().setCidade("Ribeir„o Distante");
+		c1.getEndereco().setCidade("Ribeir√£o Distante");
 		c1.getEndereco().setEstado("Passarinho");
 		
 		Agenda a = new Agenda();
